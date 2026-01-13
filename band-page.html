@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Band</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        #band img {
+            height: 450px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .navbar {
+            z-index: 1050;
+        }
+
+        .carousel-item img {
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .carousel-item {
+            transition: transform 0.6s ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 w-100">
+        <div class="container">
+            <a class="navbar-brand" href="#">HOME</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#band">Band</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tour">Tour</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div id="hero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/paris.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/newyork.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/chicago.jpg" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BAND -->
+    <section id="band" class="container text-center py-5 text-dark">
+        <h2>THE BAND</h2>
+        <p class="text-white">We love music</p>
+
+        <p class="">
+            We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <div class="row mt-4 g-4">
+            <div class="col-md-4">
+                <img src="./images/bandmember.jpg" class="img-fluid rounded mb-2 band-img">
+                <h4>Jackson</h4>
+            </div>
+
+            <div class="col-md-4">
+                <img src="./images/bandmember2.jpg" class="img-fluid rounded mb-2 band-img">
+                <h4>Darren</h4>
+            </div>
+
+            <div class="col-md-4">
+                <img src="./images/bandmember3.jpg" class="img-fluid rounded mb-2 band-img">
+                <h4>Neoshotts</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TOUR -->
+    <section id="tour" class="bg-black text-white py-5">
+        <div class="container text-center">
+            <h2>TOUR DATES</h2>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./images/newyork.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>New York</h5>
+                            <p>Fri 27 Nov 2026</p>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ticketModal">
+                                Buy Tickets
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./images/paris.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Paris</h5>
+                            <p>Sat 28 Nov 2026</p>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ticketModal">
+                                Buy Tickets
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./images/chicago.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>San Francisco</h5>
+                            <p>Sun 29 Nov 2026</p>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ticketModal">
+                                Buy Tickets
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">CONTACT</h2>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+                <p><i class="fa fa-phone"></i> +00 151515</p>
+                <p><i class="fa fa-envelope"></i> mail@mail.com</p>
+            </div>
+
+            <div class="col-md-6">
+                <form>
+                    <input class="form-control mb-2" placeholder="Name">
+                    <input class="form-control mb-2" placeholder="Email">
+                    <textarea class="form-control mb-2" placeholder="Message"></textarea>
+                    <button class="btn btn-dark">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-light text-center py-4">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="ticketModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Tickets</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control mb-2" placeholder="How many?">
+                    <input class="form-control mb-2" placeholder="Email">
+                    <button class="btn btn-success w-100">Pay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
